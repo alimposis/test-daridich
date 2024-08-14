@@ -1,0 +1,289 @@
+.pen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-animation: 1s appear 1 forwards;
+  -moz-animation: 1s appear 1 forwards;
+  -o-animation: 1s appear 1 forwards;
+  animation: 1s appear 1 forwards;
+  background-color: rgba(158, 86, 30, 1);
+  z-index: 2;
+  margin-top: -50px;
+  padding-bottom: 10px;
+  
+}
+.credit {
+  display: block;
+  max-width: 400px;
+  text-align: center;
+  margin: 150px auto 0;
+  padding: 0;
+  font-size: 0.8em;
+  color: #f0f0f0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+}
+.credit p a,
+.credit a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+.credit p a:hover,
+.credit a:hover,
+.credit p a:active,
+.credit a:active {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+  color: white;
+}
+.credit p a.button,
+.credit a.button {
+  padding: 6px 12px;
+  margin-top: 10px;
+  background: #000000;
+  border-radius: 3px;
+}
+.credit p a.button:hover,
+.credit a.button:hover {
+  background: #2b2b2b;
+}
+.credit p:last-of-type {
+  margin-bottom: 30px;
+}
+.stage {
+  max-width: 100%;
+  height: 400px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.slide {
+  background: green;
+  width: 304px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  -webkit-transform-origin: 50% 50%;
+  height: 400px;
+  margin: 0 7px 0 0;
+  display: inline-block;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  h3{
+    font-family: "Montserrat", sans-serif;
+    color:rgba(255, 249, 190, 1);
+  }
+  &:hover{
+    .effect-to-top__people{
+      display: block;
+      transition:2s;
+      opacity: 1;
+    }
+  }
+}
+.slide.active {
+  width: 282px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.slide.inactive {
+  width: 162px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  opacity: 0.4;
+}
+.slide.experience {
+  background: url('./src/public/img/experience.png') 45% 0 no-repeat;
+  background-size: cover;
+  &:hover{
+    .effect-to-top{
+      height: 50%;
+      transform: translate(0px, -160px) rotate(0deg);
+    }
+  }
+}
+.slide.naturalWater {
+  background: url('./src/public/img/naturalWater.png') 45% 0 no-repeat;
+  background-size: cover;
+  &:hover{
+    .effect-to-top{
+      height: 50%;
+      opacity: 1;
+      transform: translate(0px, -160px) rotate(0deg);
+    }
+  }
+}
+.slide.ingredients {
+  background: url('./src/public/img/Ingredients.png') 45% 0 no-repeat;
+  background-size: cover;
+  
+  &:hover{
+    .effect-to-top{
+      height: 50%;
+      opacity: 1;
+      transform: translate(0px, -160px) rotate(0deg);
+    }
+  }
+}
+.effect-to-top__people{
+  text-align: center;
+  font-family:"Montserrat", sans-serif;
+  transition: 2s;
+  opacity: 0;
+  display: none;
+}
+.slide.people {
+  background: url('./src/public/img/People.png') 45% 0 no-repeat;
+  background-size: cover;
+  &:hover{
+    .effect-to-top{
+      height: 50%;
+      opacity: 1;
+      transform: translate(0px, -160px) rotate(0deg);
+    }
+  }
+}
+.slide.recipe {
+  background: url('./src/public/img/recipe.png') 45% 0 no-repeat;
+  background-size: cover;
+  &:hover{
+    .effect-to-top{
+      transition: all 0.2s ease-in-out;
+      height: 50%;
+      opacity: 1;
+      transform: translate(0px, -160px) rotate(0deg);
+    }
+  }
+}
+.slide:last-of-type {
+  margin: 0;
+}
+.effect-to-top {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  top: 90%;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.3); 
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+}
+.dark__Vector.bottom{
+  z-index: 3;
+}
+@media all and (min-width: 900px) {
+  .pen {
+    max-width: 100%;
+  }
+  .slide {
+    width: 286px;
+  }
+  .slide.inactive {
+    width: 246px;
+  }
+  .slide.active {
+    width: 366px;
+  }
+  .stage {
+    max-width: 1876px;
+    height: 400px;
+  }
+}
+@media all and (max-width: 1476px) {
+  .pen {
+    max-width: 1476px;
+  }
+  .slide {
+    max-width: 250px;
+  }
+  .slide.inactive {
+    width: 200px;
+  }
+  .slide.active {
+    width: 300px;
+  }
+  .stage {
+    max-width: 1476px;
+  }
+}
+@media all and (max-width: 1298px) {
+  .pen {
+    max-width: 100%;
+  }
+  .slide {
+    max-width: 200px;
+  }
+  .slide.inactive {
+    width: 150px;
+  }
+  .slide.active {
+    width: 250px;
+  }
+  .stage {
+    max-width: 100%;
+  }
+}
+@-webkit-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media (max-width:1070px){
+  .stage{
+    display: none;
+  }
+}

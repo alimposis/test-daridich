@@ -1,0 +1,101 @@
+@import './light.scss';
+.slider--adaptive{
+  background-color:rgba(158, 86, 30, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+  h2{
+    max-width: 312px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 34px;
+    span{
+      color: $beigeColor;
+    }
+  }
+}
+.adaptive__img{
+  display: flex;
+  width: 312px;
+  display: flex;
+  height: 336px;
+  overflow: hidden;
+}
+.slider--adaptive__block{
+  display: none;
+  position: absolute;
+  width: 307px;
+  height: 336px;
+  align-items: center;
+  justify-content: end;
+  overflow: hidden;
+  flex-direction: column;
+
+  main{
+    background-color:rgba(0, 0, 0, 0.65);
+  }
+}
+.slider--adaptive__block.experience{
+  background: url('./src/public/img/experience.png');
+}
+.slider--adaptive__block.naturalWater{
+  background: url('./src/public/img/naturalWater.png');
+}
+.slider--adaptive__block.ingredients{
+  background: url('./src/public/img/naturalWater.png');
+}
+.slider--adaptive__block.people{
+  background: url('./src/public/img/People.png');
+}
+.slider--adaptive__block.recipe{
+  background: url('./src/public/img/recipe.png');
+}
+.slider--adaptive__block.active{
+  display: flex;
+  z-index: 3;
+}
+.adaptive__main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  h2{
+    font-size: 20px;
+    color:$beigeColor;
+  }
+  span{
+    text-align: center;
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+.slider--adaptive__points{
+  margin-top: 15px;
+  margin-bottom: 43px;
+  z-index: 3;
+  display: flex;
+}
+.slider--adaptive__point{
+  width: 31px;
+  height: 3px;
+  background-color: rgba(101, 64, 42, 1);
+  border:0px;
+  margin: 2px;
+}
+.slider--adaptive__point.active{
+  background-color:$beigeColor;
+}
+@media (min-width:1070px){
+  .slider--adaptive{
+    display: none;
+  }
+}
+@media (max-width:320px){
+  .slider--adaptive__block{
+    width: 100%;
+  }
+  .adaptive__img{
+    width: 100%;
+  }
+}

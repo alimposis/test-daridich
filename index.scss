@@ -1,0 +1,18 @@
+@import './src/styles/header';
+@import './src/styles/light';
+@import './src/styles/dark';
+@import './src/styles/sliderReversive';
+@import './src/styles/slider';
+@import './src/styles/footer';
+@import './src/styles/adaptiveSlide';
+
+
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
